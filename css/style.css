@@ -7,10 +7,37 @@ body {
 a {
   text-decoration: none;
   font-style: normal;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.container {
+  max-width: 1158px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 /* Header */
+.header {
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -22,6 +49,11 @@ a {
 }
 .header-logo-accent {
   color: #2e2f42;
+}
+.list {
+  margin-left: 76px;
+  display: flex;
+  gap: 40px;
 }
 
 .list-item-link {
@@ -41,6 +73,10 @@ a {
 .address {
   font-style: normal;
 }
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .address-list-item a {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -57,12 +93,22 @@ a {
 .section-hero {
   background-color: #2e2f42;
 }
+.hero-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .section-hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
+
   color: #ffffff;
+  max-width: 496px;
+  margin-bottom: 40px;
+  margin-top: 188px;
 }
 .section-hero-button {
   background-color: #4d5ae5;
@@ -70,8 +116,12 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffff;
-  font-family: "Roboto", sans-serif;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+
+  margin-bottom: 188px;
 }
 .section-hero-button:hover,
 .section-hero-button:focus {
@@ -79,7 +129,27 @@ a {
 }
 
 /* Highlights Section */
+.highlights {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.highlights-list {
+  display: flex;
+  gap: 24px;
+}
 .highlights-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -99,6 +169,8 @@ a {
   background-color: #f4f4fd;
 }
 .squad-main {
+  padding-top: 120px;
+  padding-bottom: 120px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -108,9 +180,24 @@ a {
 
 .squad-list {
   letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+.squad-list:not(:first-child) {
+  padding-left: 0;
 }
 .squad-list-item {
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+}
+.squad-wraper {
+  padding: 32px 16px;
+  display: block;
+  text-align: center;
 }
 .squad-list-name {
   font-weight: 500;
@@ -118,12 +205,20 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 0;
+  padding-bottom: 8px;
 }
 .squad-list-text {
   line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* Portfolio Section */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 32px;
+}
 
 .portfolio-title {
   font-size: 36px;
@@ -132,6 +227,28 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0 auto;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+  border: solid 1px #e7e9fc;
+}
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio-wraper {
+  padding-top: 32px;
+  padding-left: 16px;
+  display: block;
 }
 .portfolio-item-title {
   font-weight: 500;
@@ -139,24 +256,24 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
+  margin-top: 0;
 }
 
 /* Footer */
 .footer-content {
   background: #2e2f42;
-}
-.logo-accent {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 16px;
+  display: block;
 }
 .footer-logo {
   font-weight: 700;
@@ -168,8 +285,7 @@ a {
   font-family: "Raleway", sans-serif;
 }
 .footer-text {
-  font-weight: 400;
-  font-size: 16px;
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
