@@ -36,7 +36,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .header-nav {
@@ -80,8 +79,8 @@ img {
 
 /* Address */
 .address {
+  margin-left: 332px;
   font-style: normal;
-  flex-shrink: 0;
 }
 .address-list {
   display: flex;
@@ -91,6 +90,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 0;
 }
 .address-list-item a:hover,
 .address-list-item a:focus {
