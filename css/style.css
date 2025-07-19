@@ -179,10 +179,8 @@ ol {
   letter-spacing: 0.02em;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  align-items: center;
   gap: 24px;
-}
-.squad-list:not(:first-child) {
 }
 .squad-list-item {
   background-color: #ffffff;
