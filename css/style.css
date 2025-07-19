@@ -6,6 +6,7 @@ body {
 }
 a {
   text-decoration: none;
+  display: block;
 }
 ul,
 ol {
@@ -27,16 +28,11 @@ img {
 
 /* Header */
 .header {
-  padding: 20px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
   display: flex;
-  justify-content: space-between;
 }
 .header-nav {
   display: flex;
@@ -85,6 +81,7 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 .address-list-item a {
   line-height: 1.5;
@@ -130,9 +127,6 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
-  margin-bottom: 188px;
-  display: block;
-  width: auto;
 }
 .section-hero-button:hover,
 .section-hero-button:focus {
