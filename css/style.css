@@ -131,7 +131,8 @@ img {
   padding: 16px 32px;
   border: none;
   margin-bottom: 188px;
-  min-width: 169px;
+  display: block;
+  width: auto;
 }
 .section-hero-button:hover,
 .section-hero-button:focus {
