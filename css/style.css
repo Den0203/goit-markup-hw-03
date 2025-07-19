@@ -6,7 +6,6 @@ body {
 }
 a {
   text-decoration: none;
-  font-style: normal;
 }
 ul,
 ol {
@@ -16,7 +15,6 @@ ol {
 }
 .container {
   max-width: 1158px;
-
   margin-left: auto;
   margin-right: auto;
   padding-right: 16px;
@@ -31,7 +29,6 @@ ol {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .header-nav {
   display: flex;
@@ -186,7 +183,6 @@ ol {
   gap: 24px;
 }
 .squad-list:not(:first-child) {
-  padding-left: 0;
 }
 .squad-list-item {
   background-color: #ffffff;
@@ -274,6 +270,7 @@ ol {
   padding-top: 100px;
   margin-bottom: 16px;
   display: block;
+  padding-left: 46px;
 }
 .footer-logo {
   font-weight: 700;
